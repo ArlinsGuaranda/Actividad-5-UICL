@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo en Ecuador | Demo UI Components</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <style>
+        /* Custom styles for the tourism theme */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #2c3e50;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2980b9;
+        }
+
+        .card__title {
+            color: #16a085;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Explora los Mejores Destinos Turísticos de Ecuador</h1>
+
+    <!-- Ejemplo de botón para ir a un destino turístico -->
+    <button class="button button--primary">Descubre Quito</button>
+    <button class="button button--secondary">Aventuras en las Islas Galápagos</button>
+
+    <!-- Ejemplo de tarjeta con información sobre un destino -->
+    <div class="card">
+        <h2 class="card__title">Quito</h2>
+        <p>La capital de Ecuador, famosa por su impresionante centro histórico, patrimonio de la humanidad.</p>
+        <button class="button button--primary">Ver más sobre Quito</button>
+    </div>
+
+    <div class="card">
+        <h2 class="card__title">Islas Galápagos</h2>
+        <p>Un paraíso natural único, con fauna exótica y paisajes impresionantes.</p>
+        <button class="button button--primary">Ver más sobre Galápagos</button>
+    </div>
+
+    <!-- Ejemplo de formulario para reserva de tours -->
+    <div class="card">
+        <h2 class="card__title">Reserva tu Tour</h2>
+        <form action="#">
+            <label for="destination">Elige tu destino:</label>
+            <select id="destination">
+                <option value="quito">Quito</option>
+                <option value="galapagos">Galápagos</option>
+                <option value="cuenca">Cuenca</option>
+            </select>
+            <label for="name">Tu Nombre:</label>
+            <input type="text" id="name" placeholder="Escribe tu nombre">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" placeholder="Tu correo electrónico">
+            <button class="button button--primary" type="submit">Reserva ahora</button>
+        </form>
+    </div>
+
+    <!-- Ejemplo de modal (ventana emergente) con información adicional -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Bienvenido a Ecuador</h2>
+            <p>Disfruta de la naturaleza, cultura y gastronomía de uno de los destinos más fascinantes del mundo.</p>
+            <button class="button button--secondary">Cerrar</button>
+        </div>
+    </div>
+
+    <script>
+        // Script para modal
+        var modal = document.querySelector(".modal");
+        var closeModal = document.querySelector(".close");
+        modal.style.display = "block";
+
+        closeModal.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+/* Estilo para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal p {
+    background-color: white;
+    padding: var(--spacing-medium);
+    border-radius: 8px;
+}
